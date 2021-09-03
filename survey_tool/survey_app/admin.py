@@ -8,7 +8,7 @@ admin.site.register(SurveyReports)
 class QuestionInLineModel(admin.StackedInline):
     model = Question
     fields = ['survey','title','order','type','options']
-    extra = 1
+    extra = 0
 
 
 @admin.register(Survey)
